@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <form name="calculadora">
+        <input class="pantalla" type="text" name="ans" value="" autocomplete="off" readonly>
+
+      <div class="btn-numb">
+        <div class="b-number" value="00" onclick="document.calculadora.ans.value+='00'">00</div>
+        <div class="b-number" value="0" onclick="document.calculadora.ans.value+='0'">0</div>
+        <div class="b-number" value="1" onclick="document.calculadora.ans.value+='1'">1</div>
+        <div class="b-number" value="2" onclick="document.calculadora.ans.value+='2'">2</div>
+        <div class="b-number" value="3" onclick="document.calculadora.ans.value+='3'">3</div>
+        <div class="b-number" value="4" onclick="document.calculadora.ans.value+='4'">4</div>
+        <div class="b-number" value="5" onclick="document.calculadora.ans.value+='5'">5</div>
+        <div class="b-number" value="6" onclick="document.calculadora.ans.value+='6'">6</div>
+        <div class="b-number" value="7" onclick="document.calculadora.ans.value+='7'">7</div>
+        <div class="b-number" value="8" onclick="document.calculadora.ans.value+='8'">8</div>
+        <div class="b-number" value="9" onclick="document.calculadora.ans.value+='9'">9</div>
+     </div>
+        <div class="bspecial">
+            <input class="c"type="reset" value="C ">
+            <div class="b-special" value="%" onclick="document.calculadora.ans.value+='%'">%</div>
+            <div class="b-special" value="." onclick="document.calculadora.ans.value+='.'">.</div>
+            <div class="b-special" value="/" onclick="document.calculadora.ans.value+='/'">/</div>
+            <div class="b-special" value="*" onclick="document.calculadora.ans.value+='*'">*</div>
+            <div class="b-special" value="-" onclick="document.calculadora.ans.value+='-'">-</div>
+            <div class="b-special" value="+" onclick="document.calculadora.ans.value+='+'">+</div> 
+            <div class="b-special"value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">Enter</div>
+        </div>
+     </form>
+    </div>
+
+</body>
+</html>
